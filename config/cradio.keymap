@@ -34,17 +34,11 @@
             key-positions = <10 11>;
             bindings = <&kp TAB>;
         };
-
-        combo_del {
+        
+        combo_caps {
             timeout-ms = <50>;
-            key-positions = <7 8>;
-            bindings = <&kp DEL>;
-        };
-
-        combo_bspc {
-            timeout-ms = <50>;
-            key-positions = <6 7>;
-            bindings = <&kp BSPC>;
+            key-positions = <20 21>;
+            bindings = <&kp CAPS>;
         };
 
     };
@@ -66,7 +60,7 @@
             &kp NUM_1   &kp NUM_2   &kp NUM_3   &kp NUM_4   &kp NUM_5       &kp NUM_6 &kp NUM_7 &kp NUM_8       &kp NUM_9   &kp NUM_0 
             &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR    &kp RPAR
             &kp MINUS   &kp PLUS    &kp UNDER   &kp EQUAL   &kp TILDE       &kp LBRC  &kp RBRC  &kp LBKT        &kp RBKT    &kp QUOT     
-                                                &to DEFAULT &kp RET  		&kp SPC   &to SECOND
+                                                &to DEFAULT &kp DEL  		&kp BSPC   &to SECOND
             >;
 		};
 		
@@ -75,7 +69,7 @@
             &kp  F1    &kp F2       &kp F3                              &kp F4              &kp F5          &kp F6    &kp F7    &kp F8    &kp F9    &kp F10
             &kp F11    &kp F12 	    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS   &kp C_AC_SEARCH     &kp 0x2A0       &kp LT    &kp GT    &kp LBKT  &kp QMARK &kp BSLH
             &kp PIPE   &kp GRAVE    &kp PG_DN                           &kp PG_UP           &kp HOME    	&kp DQT   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
-                                                                        &to DEFAULT         &kp RET  		&kp SPC   &to THIRD 
+                                                                        &to DEFAULT         &kp DEL  		&kp BSPC   &to THIRD 
             >;
 		};	
 		
