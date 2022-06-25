@@ -50,13 +50,13 @@
         combo_bspc {
             timeout-ms = <50>;
             key-positions = <8 9>;
-            bindings = <&kp RGUI>;
+            bindings = <&kp BSPC>;
         };
 
         combo_del {
             timeout-ms = <50>;
             key-positions = <7 8>;
-            bindings = <&kp RGUI>;
+            bindings = <&kp DEL>;
         };
         
         combo_ralt {
