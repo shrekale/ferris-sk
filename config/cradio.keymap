@@ -43,7 +43,7 @@
 
         combo_del {
             timeout-ms = <20>;
-            key-positions = <11 12 13 14>;
+            key-positions = <10 11 12 13>;
             bindings = <&kp DEL>;
         };
 
