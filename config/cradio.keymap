@@ -66,10 +66,10 @@
 		
 		SECOND {
             bindings = <
-            &kp  F1    &kp F2       &kp F3                              &kp F4              &kp F5          &kp F6    &kp F7    &kp F8    &kp F9    &kp F10
-            &kp F11    &kp F12 	    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS   &kp C_AC_SEARCH     &kp 0x2A0       &kp LT    &kp GT    &kp LBKT  &kp QMARK &kp BSLH
-            &kp PIPE   &kp GRAVE    &kp PG_DN                           &kp PG_UP           &kp HOME    	&kp DQT   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
-                                                                        &to DEFAULT         &kp DEL  		&kp BSPC   &to THIRD 
+            &kp  F1    &kp F2       &kp F3                              &kp F4              &kp F5              &kp F6    &kp F7    &kp F8    &kp F9    &kp F10
+            &kp F11    &kp F12 	    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS   &kp C_AC_SEARCH     &kp C_AL_NEXT_TASK  &kp LT    &kp GT    &kp LBKT  &kp QMARK &kp BSLH
+            &kp PIPE   &kp GRAVE    &kp PG_DN                           &kp PG_UP           &kp HOME    	    &kp DQT   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
+                                                                        &to DEFAULT         &kp DEL  		    &kp BSPC   &to THIRD 
             >;
 		};	
 		
