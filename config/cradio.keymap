@@ -43,13 +43,13 @@
 
         combo_del {
             timeout-ms = <20>;
-            key-positions = <10 11 12 13>;
+            key-positions = <11 12 13>;
             bindings = <&kp DEL>;
         };
 
         combo_bspc {
             timeout-ms = <20>;
-            key-positions = <16 17 18 19>;
+            key-positions = <16 17 18>;
             bindings = <&kp BSPC>;
         };
     };
