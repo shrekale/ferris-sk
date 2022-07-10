@@ -9,10 +9,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define FIRST   1
-#define SECOND  2
-#define THIRD   3
-#define FOURTH  4
+#define STICKY  1
+#define FIRST   2
+#define SECOND  3
+#define THIRD   4
+#define FOURTH  5
 
 &mt {
   //  flavor = "tap-preferred";
@@ -50,13 +51,22 @@
 
         keymap {
                 compatible = "zmk,keymap";
-                
+        
+        STICKY {
+            bindings = <
+            &kp ESC     &none     &none    &none     &none      &none   &none                                    &none                                 &none            &none
+            &kp CAPS    &none     &none    &none     &none      &none   &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS   &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS     &kp C_AC_SEARCH  &none
+            &kp LSFT    &kp LCTRL &kp LALT &kp LGUI  &none	    &none   &kp RGUI                                 &kp RALT                              &kp RCTRL        &kp LSFT
+                                           &kp RET   &kp BSPC   &kp SPC &to FIRST 
+            >;
+		};
+
        	DEFAULT {
             bindings = <
-            &kp Q       &kp W       &kp F      &kp P      &kp B	        &kp J   &kp L        &kp U            &kp Y           &kp SEMI 
-            &kp A       &kp R       &kp S      &kp T      &kp G	        &kp M   &kp N        &kp E            &kp I           &kp O
-            &mt LSFT Z  &mt LCTRL X &mt LALT C &mt LGUI D &kp V		    &kp K   &mt RGUI H   &mt RALT CMMA    &mt RCTRL DOT   &mt LSFT FSLH
-                                          &kp RET &kp BSPC  		&kp SPC &to FIRST 
+            &kp Q       &kp W       &kp F      &kp P        &kp B	        &kp J   &kp L        &kp U            &kp Y           &kp SEMI 
+            &kp A       &kp R       &kp S      &kp T        &kp G	        &kp M   &kp N        &kp E            &kp I           &kp O
+            &kp Z       &kp X       &kp C      &kp D        &kp V		    &kp K   &kp H        &kp CMMA         &kp DOT         &mt LSFT FSLH
+                                               &sl STICKY   &kp BSPC  	    &kp SPC &to FIRST 
             >;
 		};
 
@@ -83,7 +93,7 @@
             &kp INS  &kp DEL        &trans      &trans     &trans       	&trans  &kp HOME      &kp END       &kp PG_DN   &kp PG_UP
             &trans   &trans         &trans      &trans     &trans           &trans  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_MUTE  &trans 
             &bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &trans     &trans   		&trans  &trans        &trans        &trans      &trans   
-                                            &to DEFAULT &kp RET  			&kp SPC &to DEFAULT 
+                                            &to DEFAULT    &kp RET  		&kp SPC &none 
             >;
 		};	
         
