@@ -54,10 +54,10 @@
         
         STICKY {
             bindings = <
-            &kp ESC     &none     &none    &none     &none      &none   &none                                    &none                                 &none            &none
-            &kp CAPS    &none     &none    &none     &none      &none   &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS   &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS     &kp C_AC_SEARCH  &none
+            &kp ESC     &kp HOME  &kp END  &kp PG_DN &kp PG_UP  &kp K_VOL_DN &kp K_VOL_UP                        &kp K_MUTE                            &bt BT_CLR       &bt BT_NXT  
+            &kp CAPS    &kp INS   &kp DEL  &none     &none      &none   &none                                    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS     &kp C_AC_SEARCH  &bt BT_PRV
             &kp LSFT    &kp LCTRL &kp LALT &kp LGUI  &none	    &none   &kp RGUI                                 &kp RALT                              &kp RCTRL        &kp LSFT
-                                           &kp RET   &kp BSPC   &kp SPC &to FIRST 
+                                           &kp RET   &kp BSPC   &kp SPC &kp DEL 
             >;
 		};
 
@@ -66,7 +66,7 @@
             &kp Q       &kp W       &kp F      &kp P        &kp B	        &kp J   &kp L        &kp U            &kp Y           &kp SEMI 
             &kp A       &kp R       &kp S      &kp T        &kp G	        &kp M   &kp N        &kp E            &kp I           &kp O
             &kp Z       &kp X       &kp C      &kp D        &kp V		    &kp K   &kp H        &kp CMMA         &kp DOT         &mt LSFT FSLH
-                                               &sl STICKY   &kp BSPC  	    &kp SPC &to FIRST 
+                                          &lt STICKY RET   &kp BSPC  	    &kp SPC &to FIRST 
             >;
 		};
 
@@ -84,18 +84,9 @@
             &kp  F1    &kp F2       &kp F3                              &kp F4              &kp F5              &kp F6    &kp F7    &kp F8    &kp F9    &kp F10
             &kp F11    &kp F12 	    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS   &kp C_AC_SEARCH     &kp C_AL_NEXT_TASK  &kp LT    &kp GT    &kp LBKT  &kp QMARK &kp BSLH
             &kp PIPE   &kp GRAVE    &kp PG_DN                           &kp PG_UP           &kp HOME    	    &kp DQT   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
-                                                                        &to DEFAULT         &kp DEL  		    &kp BSPC   &to THIRD 
+                                                                        &to DEFAULT         &kp DEL  		    &kp BSPC  &none 
             >;
-		};	
-		
-		THIRD {
-            bindings = <
-            &kp INS  &kp DEL        &trans      &trans     &trans       	&trans  &kp HOME      &kp END       &kp PG_DN   &kp PG_UP
-            &trans   &trans         &trans      &trans     &trans           &trans  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_MUTE  &trans 
-            &bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &trans     &trans   		&trans  &trans        &trans        &trans      &trans   
-                                            &to DEFAULT    &kp RET  		&kp SPC &none 
-            >;
-		};	
+		};
         
 	};
 };
