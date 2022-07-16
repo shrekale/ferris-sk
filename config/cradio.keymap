@@ -57,7 +57,7 @@
             &kp ESC     &kp HOME  &kp END  &kp PG_DN &kp PG_UP  &kp K_VOL_DN &kp K_VOL_UP                        &kp K_MUTE                            &bt BT_CLR       &bt BT_NXT  
             &kp CAPS    &kp INS   &kp DEL  &none     &none      &none   &none                                    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS     &kp C_AC_SEARCH  &bt BT_PRV
             &kp LSFT    &kp LCTRL &kp LALT &kp LGUI  &none	    &none   &kp RGUI                                 &kp RALT                              &kp RCTRL        &kp LSFT
-                                           &kp RET   &kp BSPC   &kp SPC &kp DEL 
+                                           &none   &kp BSPC   &kp SPC &kp DEL 
             >;
 		};
 
