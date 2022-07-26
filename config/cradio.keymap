@@ -9,11 +9,10 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define STICKY  1
-#define FIRST   2
-#define SECOND  3
-#define THIRD   4
-#define FOURTH  5
+#define LT1     1
+#define LT2     2
+#define FIRST   3
+#define SECOND  4
 
 &mt {
   //  flavor = "tap-preferred";
@@ -36,55 +35,44 @@
             bindings = <&kp TAB>;
         };
         
-        combo_caps {
-            timeout-ms = <20>;
-            key-positions = <8 9>;
-            bindings = <&kp CAPS>;
-        };
-
-        combo_del {
-            timeout-ms = <20>;
-            key-positions = <11 12 13>;
-            bindings = <&kp DEL>;
-        };
     };
 
         keymap {
                 compatible = "zmk,keymap";
-        
-        STICKY {
-            bindings = <
-            &kp ESC     &kp HOME  &kp END  &kp PG_DN &kp PG_UP  &kp K_VOL_DN &kp K_VOL_UP                        &kp K_MUTE                            &bt BT_CLR       &bt BT_NXT  
-            &kp CAPS    &kp INS   &kp DEL  &none     &none      &none   &none                                    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS     &kp C_AC_SEARCH  &bt BT_PRV
-            &kp LSFT    &kp LCTRL &kp LALT &kp LGUI  &none	    &none   &kp RGUI                                 &kp RALT                              &kp RCTRL        &kp LSFT
-                                           &none   &kp BSPC   &kp SPC &kp DEL 
-            >;
-		};
 
        	DEFAULT {
             bindings = <
             &kp Q       &kp W       &kp F      &kp P        &kp B	        &kp J   &kp L        &kp U            &kp Y           &kp SEMI 
             &kp A       &kp R       &kp S      &kp T        &kp G	        &kp M   &kp N        &kp E            &kp I           &kp O
-            &kp Z       &kp X       &kp C      &kp D        &kp V		    &kp K   &kp H        &kp CMMA         &kp DOT         &mt LSFT FSLH
-                                          &lt STICKY RET   &kp BSPC  	    &kp SPC &to FIRST 
+            &mt LSFT Z  &kp X       &kp C      &kp D        &kp V		    &kp K   &kp H        &kp CMMA         &kp DOT         &mt LSFT FSLH
+                                          &lt LT1 RET       &kp SPC  	    &kp BSPC &to FIRST 
             >;
 		};
 
-        FIRST {
+        LT1 {
             bindings = <
-            &kp NUM_1   &kp NUM_2   &kp NUM_3   &kp NUM_4   &kp NUM_5       &kp NUM_6 &kp NUM_7 &kp NUM_8       &kp NUM_9   &kp NUM_0 
-            &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR    &kp RPAR
-            &kp MINUS   &kp PLUS    &kp UNDER   &kp EQUAL   &kp TILDE       &kp LBRC  &kp RBRC  &kp LBKT        &kp RBKT    &kp QUOT     
-                                                &to DEFAULT &kp DEL  		&kp BSPC   &to SECOND
+            &kp ESC     &kp LBRC  &kp RBRC  &kp LPAR &kp RPAR      &kp STAR    &kp NUM_7   &kp NUM_8    &kp NUM_9  &kp PLUS  
+            &kp CAPS    &kp LBKT  &kp RBKT  &kp LT   &kp GT        &kp FSLH    &kp NUM_4   &kp NUM_5    &kp NUM_6  &kp MINUS
+            &kp LSFT    &kp LCTRL &kp LALT  &kp LGUI &kp QUOT      &kp NUM_0   &kp NUM_1   &kp NUM_2    &kp NUM_3  &kp BSLH
+                                           &trans   &kp SPC        &kp BSPC    &lt LT2 DEL 
+            >;
+		};
+
+        LT2 {
+            bindings = <
+            &kp EXCL   &kp TILDE    &kp PIPE    &kp GRAVE   &kp CARET      &kp C_VOL_DN &kp C_VOL_UP                         &kp C_MUTE                            &bt BT_CLR       &bt BT_NXT  
+            &kp CAPS   &kp DLLR     &kp PRCNT   &kp AT      &kp AMPS       &kp GRAVE &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS   &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS    &kp C_AC_SEARCH  &bt BT_PRV
+            &kp LSFT   &kp LCTRL    &kp LALT    &kp LGUI    &kp PIPE	   &kp DQT  &kp RGUI                                 &kp RALT                              &kp RCTRL        &kp LSFT
+                                           &trans    &kp SPC               &kp BSPC  &trans
             >;
 		};
 		
-		SECOND {
+		FIRST {
             bindings = <
-            &kp  F1    &kp F2       &kp F3                              &kp F4              &kp F5              &kp F6    &kp F7    &kp F8    &kp F9    &kp F10
-            &kp F11    &kp F12 	    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS   &kp C_AC_SEARCH     &kp C_AL_NEXT_TASK  &kp LT    &kp GT    &kp LBKT  &kp QMARK &kp BSLH
-            &kp PIPE   &kp GRAVE    &kp PG_DN                           &kp PG_UP           &kp HOME    	    &kp DQT   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT
-                                                                        &to DEFAULT         &kp DEL  		    &kp BSPC  &none 
+            &kp ESC     &kp HOME  &kp END  &kp PG_DN &kp PG_UP   &kp F6  &kp F1  &kp F2  &kp F3  &kp F4
+            &kp CAPS    &kp INS   &kp DEL  &kp LEFT  &kp RIGHT   &kp LT  &kp F5  &kp F6  &kp F7  &kp F8
+            &kp LSFT    &kp LCTRL &kp LALT &kp LGUI  &kp HASH    &kp DQT &kp F9   &kp F10 &kp F11 &kp F12
+                                          &to DEFAULT &kp DEL     &kp BSPC  &none 
             >;
 		};
         
