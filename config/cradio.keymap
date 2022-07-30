@@ -52,9 +52,9 @@
 
         FIRST {
             bindings = <
-            &none       &kp HOME  &kp END  &kp INS   &kp DEL     &kp F6   &kp F1  &kp F2  &kp F3  &kp F4
+            &none       &kp HOME  &kp END  &kp INS   &kp DEL     &kp F6   &kp F9  &kp F10 &kp F11 &kp F12
             &kp LEFT    &kp DOWN  &kp UP   &kp RIGHT &kp PG_UP   &kp INS  &kp F5  &kp F6  &kp F7  &kp F8
-            &kp LSFT    &kp LCTRL &kp LALT &kp LGUI  &kp PG_DN   &none    &kp F9  &kp F10 &kp F11 &kp F12
+            &kp LSFT    &kp LCTRL &kp LALT &kp LGUI  &kp PG_DN   &none    &kp F1  &kp F2  &kp F3  &kp F4
                                           &to DEFAULT &kp SPC    &kp BSPC  &to SECOND
             >;
 		};
