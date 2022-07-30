@@ -64,7 +64,7 @@
             &mt LC(A) LG(A) &kp C_AC_CUT    &kp C_AC_COPY    &kp C_AC_PASTE    &kp LC(BSPC)    &kp C_VOL_DN  &kp C_VOL_UP                              &kp C_MUTE                        &bt BT_CLR       &bt BT_NXT
             &kp LA(LEFT)    &kp LA(RIGHT)   &kp LS(LA(LEFT)) &kp LS(LA(RIGHT)) &kp LA(BSPC)    &kp RA(TAB)   &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS &kp C_AC_SEARCH  &bt BT_PRV
             &kp LG(LEFT)    &kp LG(RIGHT)   &kp LG(L)        &kp C_AC_UNDO     &kp LG(BSPC)    &kp RC(TAB)   &kp RC(T)                                 &kp RG(W)                         &kp LG(L)        &kp LC(LA(DEL))
-                                                             &to DEFAULT &kp DEL                &kp BSPC  &none  
+                                                             &to DEFAULT &kp SPC               &kp BSPC  &none  
             >;
 		};
         
