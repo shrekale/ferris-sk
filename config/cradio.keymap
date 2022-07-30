@@ -52,18 +52,18 @@
 
         FIRST {
             bindings = <
-            &none       &kp HOME  &kp END  &kp INS   &kp DEL     &kp F6   &kp F9  &kp F10 &kp F11 &kp F12
-            &kp LEFT    &kp DOWN  &kp UP   &kp RIGHT &kp PG_UP   &kp INS  &kp F5  &kp F6  &kp F7  &kp F8
-            &kp LSFT    &kp LCTRL &kp LALT &kp LGUI  &kp PG_DN   &none    &kp F1  &kp F2  &kp F3  &kp F4
+            &none       &kp HOME  &kp END  &kp INS   &kp DEL     &kp C_PP       &kp F9  &kp F10 &kp F11 &kp F12
+            &kp LEFT    &kp DOWN  &kp UP   &kp RIGHT &kp PG_UP   &kp C_BRI_UP   &kp F5  &kp F6  &kp F7  &kp F8
+            &kp LSFT    &kp LCTRL &kp LALT &kp LGUI  &kp PG_DN   &kp C_BRI_DN   &kp F1  &kp F2  &kp F3  &kp F4
                                           &to DEFAULT &kp SPC    &kp BSPC  &to SECOND
             >;
 		};
 
         SECOND {
             bindings = <
-            &mt LC(A) LG(A) &mt LC(X) LG(X) &mt LC(C) LG(C)  &mt LC(V) LG(V)   &kp LC(BSPC)    &kp C_VOL_DN  &kp C_VOL_UP                              &kp C_MUTE                        &bt BT_CLR       &bt BT_NXT
+            &mt LC(A) LG(A) &kp C_AC_CUT    &kp C_AC_COPY    &kp C_AC_PASTE    &kp LC(BSPC)    &kp C_VOL_DN  &kp C_VOL_UP                              &kp C_MUTE                        &bt BT_CLR       &bt BT_NXT
             &kp LA(LEFT)    &kp LA(RIGHT)   &kp LS(LA(LEFT)) &kp LS(LA(RIGHT)) &kp LA(BSPC)    &kp RA(TAB)   &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS &kp C_AC_SEARCH  &bt BT_PRV
-            &kp LG(LEFT)    &kp LG(RIGHT)   &kp LG(L)        &mt LC(Z) LG(Z)   &kp LG(BSPC)    &kp RC(TAB)   &kp RC(T)                                 &kp RG(T)                         &kp LG(L)        &kp LC(LA(DEL))
+            &kp LG(LEFT)    &kp LG(RIGHT)   &kp LG(L)        &kp C_AC_UNDO     &kp LG(BSPC)    &kp RC(TAB)   &kp RC(T)                                 &kp RG(W)                         &kp LG(L)        &kp LC(LA(DEL))
                                                              &to DEFAULT &kp DEL                &kp BSPC  &none  
             >;
 		};
