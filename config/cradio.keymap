@@ -14,9 +14,8 @@
 #define FIRST   3
 #define SECOND  4
 
-&mt {
-  //  flavor = "tap-preferred";
-   // tapping_term_ms = <200>;
+&lt {
+    tapping_term_ms = <130>;
 };
 
 / { 
@@ -26,37 +25,37 @@
 
        	DEFAULT {
             bindings = <
-            &kp Q       &kp W       &kp F      &kp P        &kp B	        &kp J   &kp L        &kp U            &kp Y           &kp SEMI 
-            &kp A       &kp R       &kp S      &kp T        &kp G	        &kp M   &kp N        &kp E            &kp I           &kp O
-            &mt LSFT Z  &kp X       &kp C      &kp D        &kp V		    &kp K   &kp H        &kp CMMA         &kp DOT         &mt LSFT FSLH
-                                          &lt LT1 RET       &kp SPC  	    &kp BSPC &to FIRST 
+            &kp Q       &kp W   &kp F   &kp P   &kp B   &kp J   &kp L   &kp U       &kp Y   &kp SEMI 
+            &kp A       &kp R   &kp S   &kp T   &kp G   &kp M   &kp N   &kp E       &kp I   &kp O
+            &mt LSFT Z  &kp X   &kp C   &kp D   &kp V   &kp K   &kp H   &kp CMMA    &kp DOT &mt LSFT FSLH
+                                &lt LT1 RET  &kp SPC    &kp BSPC &to FIRST 
             >;
 		};
 
         LT1 {
             bindings = <
-            &kp ESC     &kp LBRC  &kp RBRC  &kp LPAR &kp RPAR      &kp STAR    &kp NUM_7   &kp NUM_8    &kp NUM_9  &kp PLUS  
-            &kp CAPS    &kp LBKT  &kp RBKT  &kp LT   &kp GT        &kp AT      &kp NUM_4   &kp NUM_5    &kp NUM_6  &kp MINUS
-            &kp LSFT    &kp LCTRL &kp LALT  &kp LGUI &kp QUOT      &kp NUM_0   &kp NUM_1   &kp NUM_2    &kp NUM_3  &kp BSLH
-                                           &trans   &kp SPC        &kp DEL     &mo LT2
+            &kp ESC     &kp MINUS &kp UNDER &kp EXCL    &kp EQUAL     &kp HASH    &kp LBRC    &kp RBRC     &kp LT     &kp GT  
+            &kp TAB     &kp QUOT  &kp DQT   &kp QMARK   &kp AMPS      &kp BSLH    &kp LPAR    &kp RPAR     &kp LBKT   &kp RBKT
+            &kp LSFT    &kp LCTRL &kp LALT  &kp LGUI    &kp AT        &kp STAR    &kp RGUI    &kp RALT     &kp RCTL   &kp RSFT
+                                            &trans      &kp SPC       &kp DEL     &mo LT2
             >;
 		};
 
         LT2 {
             bindings = <
-            &kp EXCL   &kp TILDE    &kp PIPE    &kp GRAVE   &kp CARET      &kp COLON    &kp HASH  &none    &none  &kp COLON
-            &kp TAB    &kp DLLR     &kp PRCNT   &kp AT      &kp AMPS       &kp GRAVE    &kp DQT   &kp AMPS &none  &none
-            &kp LSFT   &kp LCTRL    &kp LALT    &kp LGUI    &kp DQT	       &kp PIPE     &none     &none    &none  &kp QMARK
-                                           &trans    &kp SPC               &kp BSPC  &trans
+            &kp PRCNT  &mt LA(TAB) LG(TAB) &kp LG(T)    &kp LA(BSPC) &kp PIPE    &kp STAR     &kp NUM_7   &kp NUM_8    &kp NUM_9  &kp PLUS  
+            &kp CAPS   &kp DLLR            &kp GRAVE    &kp CARET    &kp TILDE   &kp FSLH     &kp NUM_4   &kp NUM_5    &kp NUM_6  &kp MINUS
+            &kp LSFT   &kp LCTRL           &kp LALT     &kp LGUI     &kp ESC     &kp NUM_0    &kp NUM_1   &kp NUM_2    &kp NUM_3  &kp BSLH
+                                                        &trans       &kp SPC     &kp BSPC    &trans
             >;
 		};
-		
+
         FIRST {
             bindings = <
-            &none       &kp HOME  &kp END  &kp PG_DN &kp PG_UP   &kp F6   &kp F1  &kp F2  &kp F3  &kp F4
-            &kp LEFT    &kp DOWN   &kp UP  &kp RIGHT &none       &kp INS  &kp F5  &kp F6  &kp F7  &kp F8
-            &kp LSFT    &kp LCTRL &kp LALT &kp LGUI  &none       &none    &kp F9  &kp F10 &kp F11 &kp F12
-                                          &to DEFAULT &kp DEL    &kp BSPC  &to SECOND
+            &none       &kp HOME  &kp END  &kp INS   &kp DEL     &kp F6   &kp F1  &kp F2  &kp F3  &kp F4
+            &kp LEFT    &kp DOWN  &kp UP   &kp RIGHT &kp PG_UP   &kp INS  &kp F5  &kp F6  &kp F7  &kp F8
+            &kp LSFT    &kp LCTRL &kp LALT &kp LGUI  &kp PG_DN   &none    &kp F9  &kp F10 &kp F11 &kp F12
+                                          &to DEFAULT &kp SPC    &kp BSPC  &to SECOND
             >;
 		};
 
