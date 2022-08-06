@@ -15,7 +15,11 @@
 #define SECOND  4
 
 &lt {
-    tapping_term_ms = <130>;
+    tapping_term_ms = <110>;
+};
+
+&mt {
+    tapping_term_ms = <190>;
 };
 
 / { 
