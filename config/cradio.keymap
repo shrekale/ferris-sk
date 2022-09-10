@@ -15,14 +15,13 @@
 #define SECOND  4
 
 &lt {
-    tapping_term_ms = <120>;
-    quick_tap_ms = <120>;
+    tapping_term_ms = <130>;
     flavor = "hold-preferred";
 };
 
 &mt {
-    tapping_term_ms = <125>;
-    quick_tap_ms = <120>;
+    tapping_term_ms = <118>;
+    quick_tap_ms = <118>;
     flavor = "tap-preferred";
 };
 
