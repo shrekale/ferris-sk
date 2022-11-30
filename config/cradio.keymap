@@ -68,8 +68,8 @@
 
         SECOND {
             bindings = <
-            &mt LC(A) LG(A) &mt LC(X) LG(X) &mt LC(C) LG(C)  &mt LC(V) LG(V)   &kp LC(BSPC)    &kp C_VOL_DN  &kp C_VOL_UP                              &kp C_MUTE                        &bt BT_CLR       &bt BT_NXT
-            &kp LA(LEFT)    &kp LA(RIGHT)   &kp LS(LA(LEFT)) &kp LS(LA(RIGHT)) &kp LA(BSPC)    &kp RA(TAB)   &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS &kp C_AC_SEARCH  &bt BT_PRV
+            &mt LC(A) LG(A) &mt LC(X) LG(X) &mt LC(C) LG(C)  &mt LC(V) LG(V)   &kp LC(BSPC)    &bt BT_CLR    &bt BT_PRV                                &bt BT_NXT                        &kp C_VOL_DN     &kp C_VOL_UP 
+            &kp LA(LEFT)    &kp LA(RIGHT)   &kp LS(LA(LEFT)) &kp LS(LA(RIGHT)) &kp LA(BSPC)    &kp RA(TAB)   &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS    &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS &kp C_AC_SEARCH  &kp C_MUTE
             &kp LG(LEFT)    &kp LG(RIGHT)   &kp LG(L)        &mt LC(Z) LG(Z)   &kp LG(BSPC)    &kp RC(TAB)   &kp RC(T)                                 &kp RG(W)                         &kp LG(L)        &kp LC(LA(DEL))
                                                              &to DEFAULT &kp SPC               &kp BSPC  &none  
             >;
