@@ -1,0 +1,8 @@
+west build -d build/left --pristine=always -b nice_nano_v2 -- -DSHIELD=cradio_left -DZMK_CONFIG="~/../../Volumes/Stuff/Studies/workspace/ferris-sk/config"
+west build -d build/right --pristine=always -b nice_nano_v2 -- -DSHIELD=cradio_right -DZMK_CONFIG="~/../../Volumes/Stuff/Studies/workspace/ferris-sk/config"
+
+west build -d build/left --pristine=always -b nice_nano_v2 -- -DSHIELD=cradio_left -DZMK_CONFIG="~/../../Volumes/Stuff/Studies/workspace/ferris-sk/config"
+west build -d build/right --pristine=always -b nice_nano_v2 -- -DSHIELD=cradio_right -DZMK_CONFIG="~/../../Volumes/Stuff/Studies/workspace/ferris-sk/config"
+
+west build -d build/left --pristine=always -b nice_nano_v2 -- -DSHIELD=cradio_left -DZMK_CONFIG="../../ferris-sk/config"
+west build -d build/right --pristine=always -b nice_nano_v2 -- -DSHIELD=cradio_right -DZMK_CONFIG="../../ferris-sk/config"

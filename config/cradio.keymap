@@ -12,8 +12,12 @@
 #define DEFAULT 0
 #define LT1     1
 #define LT2     2
-#define FIRST   3
-#define SECOND  4
+#define LT3     3
+#define FIRST   4
+#define SECOND  5
+
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1000
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 15
 
 &lt {
     tapping_term_ms = <130>;
