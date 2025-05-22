@@ -64,10 +64,10 @@
 
         LT3 {
             bindings = <
-            &none  &msc SCRL_LEFT  &msc SCRL_RIGHT   &msc SCRL_UP   &none     &none  &mkp LCLK           &mmv MOVE_UP      &mkp RCLK          &none
-            &none  &none           &none             &msc SCRL_DOWN &none     &none  &mmv MOVE_LEFT      &mmv MOVE_DOWN    &mmv MOVE_RIGHT    &none
-            &none  &none           &none             &none          &none     &none  &none               &none             &none              &none
-                                                     &trans         &none     &none  &trans
+            &none       &msc SCRL_LEFT  &msc SCRL_RIGHT   &msc SCRL_UP   &none     &none  &mkp LCLK           &mmv MOVE_UP      &mkp RCLK          &none
+            &mkp LCLK   &none           &none             &msc SCRL_DOWN &none     &none  &mmv MOVE_LEFT      &mmv MOVE_DOWN    &mmv MOVE_RIGHT    &none
+            &none       &none           &none             &none          &none     &none  &none               &none             &none              &none
+                                                          &trans         &none     &none  &trans
             >;
         };
 
